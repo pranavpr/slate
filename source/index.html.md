@@ -178,3 +178,48 @@ tag | true | Name of tag to be updated
 module | true | Module to which tag belongs to
 moduleKey | true | Primary key of Module
 
+# DB documents
+
+Sample documents present in database
+
+> Tag Document 
+
+```json
+{
+  "_id" : "salmankhan",
+  "name" : "Salman Khan",
+  "modules" : [{
+        "source(iedb)" : [ "Primay keys here can be multiple" ],
+        "music" : [ "Primay keys here can be multiple" ]
+  }],
+  "status" : "A/U",
+  "type" : "[Refer the document below (ID goes here)]",
+  "creationSoruceId" : "[Refer the document below (ID goes here)]",
+  "referenceCount" : 120,
+  "relatedTags" : ["music", "dance"],
+  "createdAt" : "2016-02-08T13:14:52.986Z",
+  "createdBy" : "BO / BMS User Id",
+  "lastModAt" : "2016-02-08T13:14:52.986Z",
+  "lastModBy" : "BO / BMS User Id",
+  "approvedAt" : "2016-02-08T13:14:52.986Z",
+  "approvedBy" : "BO / BMS User Id"
+}
+```
+
+> Soruce Document 
+
+```json
+{
+  "_id" : "music",
+  "name" : "Music"
+}
+```
+
+> Type Document 
+
+```json
+{
+  "_id" : "actor",
+  "name" : "Actor"
+}
+```
